@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { DataRequestService } from './data-request.service';
+
+
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +11,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'marvel-madness';
+
+  public characters = []
+
+  constructor(private dataService: DataRequestService) { }
+
+  ngOnInit() {
+    this.dataService.getCharacters()
+  }
+  
 }

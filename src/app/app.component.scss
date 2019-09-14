@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide&display=swap");
+
+$primary: #6f0019;
+
+header {
+  background: $primary;
+  color: white;
+ 
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+      font-family: "Audiowide", cursive;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin:0;
+    }
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      ul {
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        li a {
+          text-decoration: none;
+          color: white;
+          padding: 1em;
+          &:hover {
+            background: darken($primary, 5%);
+          }
+        }
+      }
+    }
+  }
+}

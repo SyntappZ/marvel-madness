@@ -1,0 +1,43 @@
+
+$primary: #6f001aa1;
+
+
+   
+.wrap {
+    background:#e7e7e7;
+
+    .top-box {
+        background-image: url('/assets/marvel-background.jpg');
+       
+
+        h1 {
+            color:#fff;
+            font-weight: 800;
+            font-size: 50px;
+            background-color:$primary;
+            padding:30px;
+            border-radius:50px;
+            border:solid black 2px;
+        }
+        
+        
+    }
+    .box {
+       
+       
+        .btn {
+            color:#fff;
+            font-size:25px;
+            background-color:#6f0019;
+            padding:20px 60px;
+            border-radius:5px;
+            border:none;
+            cursor:pointer;
+            &:hover {
+                background-color:#8b0d2a;
+            }
+        }
+        
+     
+    }
+}

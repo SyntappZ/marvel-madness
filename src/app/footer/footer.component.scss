@@ -1,0 +1,9 @@
+$primary: #6f0019;
+
+.wrap {
+    border-top: 1px solid $primary;
+    background:#d3d3d3;
+    h4 {
+        color:$primary;
+    }
+}

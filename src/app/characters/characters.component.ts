@@ -14,8 +14,7 @@ export class CharactersComponent implements OnInit {
   constructor(private dataService: DataRequestService) { }
 
   ngOnInit() {
-   
-  
+   this.dataService.sendCharacters().subscribe(data => console.log(data))
   }
 
 }
